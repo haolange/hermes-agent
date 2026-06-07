@@ -2,7 +2,7 @@
 schema_version: 1
 locale: zh-CN
 branch: main
-exported_at: "2026-06-07T16:02:46Z"
+exported_at: "2026-06-07T16:14:16Z"
 modules:
     "":
         dir_name: Hermes Agent 核心编排层
@@ -4841,8 +4841,8 @@ modules:
             - gateway/
         source_files: []
         children:
-            - gateway/gateway_runtime
             - gateway/session_stream_dispatch
+            - gateway/gateway_runtime
         depends_on: []
         related_to:
             - path: apps
@@ -4909,13 +4909,13 @@ modules:
             - hermes_cli/
         source_files: []
         children:
-            - hermes_cli/models
             - hermes_cli/auth
-            - hermes_cli/profiles
-            - hermes_cli/core
             - hermes_cli/mcp
+            - hermes_cli/core
             - hermes_cli/dashboard
+            - hermes_cli/profiles
             - hermes_cli/kanban
+            - hermes_cli/models
         depends_on: []
         related_to:
             - path: gateway
@@ -4944,13 +4944,13 @@ modules:
             - hermes_cli/
         source_files: []
         children:
-            - hermes_cli/core/gateway_service
+            - hermes_cli/core/session_management
             - hermes_cli/core/ui_and_interaction
             - hermes_cli/core/integrations
-            - hermes_cli/core/plugins_and_tools
-            - hermes_cli/core/session_management
-            - hermes_cli/core/security_and_maintenance
+            - hermes_cli/core/gateway_service
             - hermes_cli/core/cli_core
+            - hermes_cli/core/plugins_and_tools
+            - hermes_cli/core/security_and_maintenance
         depends_on: []
         related_to: []
     hermes_cli/core/cli_core:
@@ -5273,12 +5273,12 @@ modules:
             - tools/
         source_files: []
         children:
-            - tools/skills_tools
-            - tools/core_utilities
-            - tools/browser_tools
-            - tools/communication_tools
             - tools/mcp_tools
+            - tools/core_utilities
+            - tools/communication_tools
+            - tools/skills_tools
             - tools/file_tools
+            - tools/browser_tools
         depends_on: []
         related_to: []
     tools/browser_tools:
@@ -5332,14 +5332,14 @@ modules:
             - tools/
         source_files: []
         children:
-            - tools/core_utilities/text_processing
-            - tools/core_utilities/execution_core
-            - tools/core_utilities/agent_orchestration
-            - tools/core_utilities/external_services
-            - tools/core_utilities/security_primitives
             - tools/core_utilities/tool_infrastructure
+            - tools/core_utilities/security_primitives
+            - tools/core_utilities/execution_core
+            - tools/core_utilities/text_processing
+            - tools/core_utilities/external_services
             - tools/core_utilities/session_state
             - tools/core_utilities/output_control
+            - tools/core_utilities/agent_orchestration
         depends_on: []
         related_to:
             - path: tools/browser_tools

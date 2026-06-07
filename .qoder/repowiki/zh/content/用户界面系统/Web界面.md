@@ -5,6 +5,7 @@
 - [web/src/main.tsx](file://web/src/main.tsx)
 - [web/src/App.tsx](file://web/src/App.tsx)
 - [web/src/pages/ChatPage.tsx](file://web/src/pages/ChatPage.tsx)
+- [web/src/pages/ConfigPage.tsx](file://web/src/pages/ConfigPage.tsx)
 - [web/src/components/AuthWidget.tsx](file://web/src/components/AuthWidget.tsx)
 - [web/src/components/OAuthLoginModal.tsx](file://web/src/components/OAuthLoginModal.tsx)
 - [web/src/components/OAuthProvidersCard.tsx](file://web/src/components/OAuthProvidersCard.tsx)
@@ -144,8 +145,14 @@
 - [gateway/platforms/feishu.py](file://gateway/platforms/feishu.py)
 - [gateway/platforms/weixin.py](file://gateway/platforms/weixin.py)
 - [gateway/platforms/whatsapp.py](file://gateway/platforms/whatsapp.py)
-- [gateway/platforms/blue......]
+- [gateway/platforms/bluebubbles......]
 </cite>
+
+## 更新摘要
+**所做更改**
+- 更新了配置页面章节，反映仪表板配置折叠的变更
+- 新增了配置分类管理的相关内容
+- 更新了配置页面的分类图标映射和布局说明
 
 ## 目录
 1. [简介](#简介)
@@ -460,6 +467,29 @@ PluginHooks --> PluginSlots : "挂载"
 - [hermes_cli/dashboard_auth/ws_tickets.py](file://hermes_cli/dashboard_auth/ws_tickets.py)
 - [gateway/display_config.py](file://gateway/display_config.py)
 
+### 配置页面与仪表板折叠
+**更新** 配置页面现已支持仪表板配置折叠功能，将 onboarding.profile_build 设置从独立分类合并到 agent 分类中，简化了配置界面布局。
+
+- ConfigPage：配置管理主界面，支持分类浏览、字段编辑、默认值重置等功能。
+- 分类管理：通过 schema 中的 category 字段自动分组配置项，支持自定义分类顺序。
+- 仪表板折叠：新的配置折叠机制允许将相关的配置项合并到更合适的分类中，如将 onboarding.profile_build 合并到 agent 分类。
+
+```mermaid
+graph LR
+A["ConfigPage.tsx"] --> B["分类加载"]
+B --> C["schema.category"]
+C --> D["分类排序"]
+D --> E["分类渲染"]
+E --> F["字段编辑"]
+F --> G["保存配置"]
+```
+
+图表来源
+- [web/src/pages/ConfigPage.tsx](file://web/src/pages/ConfigPage.tsx)
+
+章节来源
+- [web/src/pages/ConfigPage.tsx](file://web/src/pages/ConfigPage.tsx)
+
 ### 响应式设计与移动端适配
 - 项目未提供专门的响应式样式文件或断点配置，建议在现有 CSS 基础上引入媒体查询与弹性布局，结合 useSidebarStatus.ts 的状态控制实现移动端侧边栏折叠体验。
 - 主题系统与插件槽位为响应式布局提供了良好的扩展点。
@@ -477,7 +507,7 @@ PluginHooks --> PluginSlots : "挂载"
 - [web/vite.config.ts](file://web/vite.config.ts)
 
 ## 依赖关系分析
-前端依赖关系围绕“入口 -> 根组件 -> 页面/组件/主题/插件/国际化/上下文/钩子 -> 工具库”的层次展开，工具库进一步依赖后端网关提供的 WebSocket 与 REST 接口。
+前端依赖关系围绕"入口 -> 根组件 -> 页面/组件/主题/插件/国际化/上下文/钩子 -> 工具库"的层次展开，工具库进一步依赖后端网关提供的 WebSocket 与 REST 接口。
 
 ```mermaid
 graph LR
@@ -519,6 +549,7 @@ GW --> Backend["后端网关与平台"]
 - WebSocket 连接异常：查看 gatewayClient.ts 的连接初始化与错误回调，确认后端网关是否正常运行，平台适配器是否存在异常。
 - 平台消息未达：检查平台适配器（如 Telegram、Slack、Email 等）的配置与速率限制，确认事件分发与订阅链路是否畅通。
 - 国际化显示异常：确认 i18n 文件加载顺序与上下文提供者包裹范围，检查 resolve-page-title 的语言切换逻辑。
+- 配置折叠问题：检查 schema 中的分类配置，确认 onboarding.profile_build 是否正确合并到 agent 分类。
 
 章节来源
 - [hermes_cli/dashboard_auth/login_page.py](file://hermes_cli/dashboard_auth/login_page.py)
@@ -531,9 +562,10 @@ GW --> Backend["后端网关与平台"]
 - [gateway/platforms/slack.py](file://gateway/platforms/slack.py)
 - [gateway/platforms/email.py](file://gateway/platforms/email.py)
 - [web/src/lib/resolve-page-title.ts](file://web/src/lib/resolve-page-title.ts)
+- [web/src/pages/ConfigPage.tsx](file://web/src/pages/ConfigPage.tsx)
 
 ## 结论
-Hermes Agent 的 Web 界面以 React 为核心，结合网关客户端与后端平台适配器，实现了从认证、会话、实时通信到多平台消息推送的完整闭环。通过主题系统与插件体系，前端具备良好的可扩展性与可维护性。建议在现有基础上完善响应式设计、跨浏览器兼容与性能优化策略，并持续强化安全与可观测性建设。
+Hermes Agent 的 Web 界面以 React 为核心，结合网关客户端与后端平台适配器，实现了从认证、会话、实时通信到多平台消息推送的完整闭环。通过主题系统与插件体系，前端具备良好的可扩展性与可维护性。最新的配置折叠功能进一步优化了用户界面布局，简化了配置管理体验。建议在现有基础上完善响应式设计、跨浏览器兼容与性能优化策略，并持续强化安全与可观测性建设。
 
 ## 附录
 - 扩展开发指南
@@ -544,6 +576,7 @@ Hermes Agent 的 Web 界面以 React 为核心，结合网关客户端与后端�
   - 国际化：在 i18n 下新增语言文件，更新汇总导出与上下文。
   - API 集成：在 lib/api.ts 中新增接口封装，确保错误处理与类型安全。
   - WebSocket 事件：在 gatewayClient.ts 中订阅事件并更新状态，必要时扩展事件模型与分发逻辑。
+  - 配置折叠：利用 schema 的 category 字段实现配置项的智能分类与折叠。
 - 安全与合规
   - 强制 HTTPS 传输，严格校验 WebSocket 票据，限制公共路径暴露。
   - 对敏感数据进行脱敏与最小化采集，遵循数据本地化与最小权限原则。
