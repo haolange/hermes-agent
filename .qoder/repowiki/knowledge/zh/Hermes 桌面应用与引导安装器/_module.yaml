@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: apps
+title: Hermes 桌面应用与引导安装器
+scope:
+    - apps/
+source_files: []
+depends_on: []
+related_to: []

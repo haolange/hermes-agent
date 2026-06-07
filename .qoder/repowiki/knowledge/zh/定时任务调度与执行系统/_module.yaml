@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: cron
+title: 定时任务调度与执行系统
+scope:
+    - cron/
+source_files: []
+depends_on: []
+related_to: []
