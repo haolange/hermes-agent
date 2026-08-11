@@ -1,0 +1,45 @@
+schema_version: 1
+module_path: gateway_server/gateway_runtime
+title: Gateway 运行时支撑模块（配置/路由/状态/钩子/配对）
+scope:
+    - gateway/config.py
+    - gateway/platform_registry.py
+    - gateway/channel_directory.py
+    - gateway/profile_routing.py
+    - gateway/delivery.py
+    - gateway/delivery_ledger.py
+    - gateway/rich_sent_store.py
+    - gateway/message_timestamps.py
+    - gateway/mirror.py
+    - gateway/pairing.py
+    - gateway/hooks.py
+    - gateway/response_filters.py
+    - gateway/status.py
+    - gateway/status_phrases.py
+    - gateway/sticker_cache.py
+    - gateway/systemd_notify.py
+    - gateway/wake.py
+    - gateway/agent_cache_pressure.py
+    - gateway/code_skew.py
+    - gateway/cwd_placeholder.py
+    - gateway/dead_targets.py
+    - gateway/display_config.py
+    - gateway/drain_control.py
+    - gateway/lifecycle_ledger.py
+    - gateway/memory_monitor.py
+    - gateway/readiness.py
+    - gateway/restart.py
+    - gateway/restart_loop_guard.py
+    - gateway/runtime_footer.py
+    - gateway/scale_to_zero.py
+    - gateway/shutdown_flush.py
+    - gateway/shutdown_forensics.py
+    - gateway/shutdown_watchdog.py
+    - gateway/authz_mixin.py
+    - gateway/cgroup_cleanup.py
+    - gateway/__init__.py
+source_files: []
+depends_on: []
+related_to:
+    - path: gateway_server/session_lifecycle
+    - path: gateway_server/streaming_dispatch

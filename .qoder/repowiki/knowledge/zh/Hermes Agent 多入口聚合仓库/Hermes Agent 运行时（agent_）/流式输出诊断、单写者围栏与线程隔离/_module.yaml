@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/streaming_output
+title: 流式输出诊断、单写者围栏与线程隔离
+scope:
+    - agent/stream_diag.py
+    - agent/stream_single_writer.py
+    - agent/thread_scoped_output.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/core_runtime_loop

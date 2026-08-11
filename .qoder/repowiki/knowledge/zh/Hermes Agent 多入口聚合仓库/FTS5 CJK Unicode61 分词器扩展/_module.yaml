@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: native_code
+title: FTS5 CJK Unicode61 分词器扩展
+scope:
+    - native/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: agent_runtime
+title: Hermes Agent 运行时（agent/）
+scope:
+    - agent/
+source_files: []
+depends_on: []
+related_to:
+    - path: acp_adapter

@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/prompt_and_reasoning
+title: 系统提示词组装与推理摘要修复
+scope:
+    - agent/prompt_builder.py
+    - agent/system_prompt.py
+    - agent/reasoning_summaries.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/session_turn_lifecycle

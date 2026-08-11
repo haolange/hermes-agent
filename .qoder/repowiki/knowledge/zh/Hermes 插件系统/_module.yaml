@@ -1,9 +1,0 @@
-schema_version: 1
-module_path: plugins
-title: Hermes 插件系统
-scope:
-    - plugins/
-source_files: []
-depends_on: []
-related_to:
-    - path: hermes_cli/core/plugins_and_tools

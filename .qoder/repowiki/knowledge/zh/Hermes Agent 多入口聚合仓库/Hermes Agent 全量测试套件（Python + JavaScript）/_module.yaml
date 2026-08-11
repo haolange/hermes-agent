@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: tests
+title: Hermes Agent 全量测试套件（Python + JavaScript）
+scope:
+    - tests/
+    - tests-js/
+source_files: []
+depends_on: []
+related_to:
+    - path: gateway_server
+    - path: hermes_cli

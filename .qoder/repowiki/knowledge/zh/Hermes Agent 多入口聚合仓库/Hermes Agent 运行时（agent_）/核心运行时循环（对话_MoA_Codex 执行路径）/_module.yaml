@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: agent_runtime/core_runtime_loop
+title: 核心运行时循环（对话/MoA/Codex 执行路径）
+scope:
+    - agent/codex_runtime.py
+    - agent/conversation_loop.py
+    - agent/moa_loop.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/streaming_output
+    - path: agent_runtime/trace_upload
+    - path: gateway_server/session_lifecycle
+    - path: gateway_server/streaming_dispatch

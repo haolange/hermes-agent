@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: tools/terminal_desktop_tools
+title: 终端执行与桌面 UI 工具集
+scope:
+    - tools/terminal_tool.py
+    - tools/close_terminal_tool.py
+    - tools/read_terminal_tool.py
+    - tools/desktop_ui.py
+    - tools/focus_pane_tool.py
+    - tools/terminal_hints.py
+    - tools/open_preview_tool.py
+    - tools/read_preview_tool.py
+source_files: []
+depends_on: []
+related_to: []

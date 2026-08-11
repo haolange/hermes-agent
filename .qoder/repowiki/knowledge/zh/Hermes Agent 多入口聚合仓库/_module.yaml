@@ -1,0 +1,67 @@
+schema_version: 1
+module_path: ""
+title: Hermes Agent 多入口聚合仓库
+scope:
+    - README.md
+    - CONTRIBUTING.md
+    - .gitignore
+    - pyproject.toml
+    - Dockerfile
+    - flake.nix
+    - cli.py
+    - batch_runner.py
+    - run_agent.py
+    - mcp_serve.py
+    - mini_swe_runner.py
+    - model_tools.py
+    - toolset_distributions.py
+    - toolsets.py
+    - trajectory_compressor.py
+    - utils.py
+    - hermes_constants.py
+    - hermes_logging.py
+    - hermes_state*.py
+    - hermes_time.py
+    - .dockerignore
+    - .env.example
+    - .envrc
+    - .gitattributes
+    - .hadolint.yaml
+    - .mailmap
+    - .npmrc
+    - .nvmrc
+    - .prettierignore
+    - .prettierrc
+    - .python-version
+    - AGENTS.md
+    - CONTRIBUTING.es.md
+    - LICENSE
+    - README.es.md
+    - README.ur-pk.md
+    - README.zh-CN.md
+    - SECURITY.es.md
+    - SECURITY.md
+    - cli-config.yaml.example
+    - constraints-termux.txt
+    - docker-compose.windows.yml
+    - docker-compose.yml
+    - eslint.config.shared.mjs
+    - flake.lock
+    - hermes
+    - hermes-already-has-routines.md
+    - hermes_bootstrap.py
+    - hermes_state.py
+    - hermes_state_common.py
+    - hermes_state_portability.py
+    - hermes_state_schema.py
+    - hermes_state_search.py
+    - log.txt
+    - package-lock.json
+    - package.json
+    - setup-hermes.sh
+    - setup.py
+    - sqlite_leak_fix.png
+    - uv.lock
+source_files: []
+depends_on: []
+related_to: []

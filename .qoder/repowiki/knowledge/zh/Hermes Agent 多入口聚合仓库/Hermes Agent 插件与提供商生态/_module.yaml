@@ -1,0 +1,10 @@
+schema_version: 1
+module_path: plugins
+title: Hermes Agent 插件与提供商生态
+scope:
+    - plugins/
+    - providers/
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/provider_registries

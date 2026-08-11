@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/security_ssl_tls
+title: SSL/TLS 证书校验与文件安全策略
+scope:
+    - agent/ssl_guard.py
+    - agent/ssl_verify.py
+    - agent/file_safety.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/model_adapters

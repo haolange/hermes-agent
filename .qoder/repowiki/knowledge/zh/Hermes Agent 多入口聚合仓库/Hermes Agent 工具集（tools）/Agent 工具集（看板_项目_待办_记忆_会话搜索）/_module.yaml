@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: tools/kanban_project_tools
+title: Agent 工具集（看板/项目/待办/记忆/会话搜索）
+scope:
+    - tools/kanban_tools.py
+    - tools/project_tools.py
+    - tools/todo_tool.py
+    - tools/memory_tool.py
+    - tools/session_search_tool.py
+source_files: []
+depends_on: []
+related_to: []

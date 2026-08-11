@@ -1,0 +1,15 @@
+schema_version: 1
+module_path: gateway_server/session_lifecycle
+title: 网关会话生命周期与转轮管理
+scope:
+    - gateway/session.py
+    - gateway/session_context.py
+    - gateway/session_state.py
+    - gateway/session_stall.py
+    - gateway/turn_context.py
+    - gateway/turn_lease.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/core_runtime_loop
+    - path: gateway_server/gateway_runtime

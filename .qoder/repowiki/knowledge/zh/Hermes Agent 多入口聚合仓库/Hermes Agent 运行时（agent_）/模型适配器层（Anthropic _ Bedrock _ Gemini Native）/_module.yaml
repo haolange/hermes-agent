@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: agent_runtime/model_adapters
+title: 模型适配器层（Anthropic / Bedrock / Gemini Native）
+scope:
+    - agent/anthropic_adapter.py
+    - agent/bedrock_adapter.py
+    - agent/gemini_native_adapter.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/credential_management
+    - path: agent_runtime/error_retry_rate_limit
+    - path: agent_runtime/security_ssl_tls

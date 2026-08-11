@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: agent_runtime/provider_registries
+title: 插件化 Provider 注册中心
+scope:
+    - agent/browser_registry.py
+    - agent/image_gen_registry.py
+    - agent/transcription_registry.py
+source_files: []
+depends_on: []
+related_to:
+    - path: plugins
+    - path: tools/browser_tools
+    - path: tools/tts_audio_tools

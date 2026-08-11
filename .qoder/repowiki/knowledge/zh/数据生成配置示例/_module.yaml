@@ -1,9 +1,0 @@
-schema_version: 1
-module_path: datagen_examples
-title: 数据生成配置示例
-scope:
-    - datagen-config-examples/
-source_files: []
-depends_on: []
-related_to:
-    - path: tools/browser_tools

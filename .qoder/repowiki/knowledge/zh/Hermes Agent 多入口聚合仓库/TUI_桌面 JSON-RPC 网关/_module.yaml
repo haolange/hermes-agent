@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: tui_gateway
+title: TUI/桌面 JSON-RPC 网关
+scope:
+    - tui_gateway/
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/billing_usage_accounting
+    - path: desktop_app
+    - path: hermes_cli
+    - path: tools/delegation_tools
+    - path: tools/mcp_tools
+    - path: web_frontend

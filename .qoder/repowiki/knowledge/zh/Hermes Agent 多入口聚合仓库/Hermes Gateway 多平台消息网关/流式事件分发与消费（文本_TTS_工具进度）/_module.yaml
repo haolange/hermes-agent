@@ -1,0 +1,13 @@
+schema_version: 1
+module_path: gateway_server/streaming_dispatch
+title: 流式事件分发与消费（文本/TTS/工具进度）
+scope:
+    - gateway/stream_consumer.py
+    - gateway/stream_dispatch.py
+    - gateway/stream_events.py
+    - gateway/streaming_tts_consumer.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/core_runtime_loop
+    - path: gateway_server/gateway_runtime

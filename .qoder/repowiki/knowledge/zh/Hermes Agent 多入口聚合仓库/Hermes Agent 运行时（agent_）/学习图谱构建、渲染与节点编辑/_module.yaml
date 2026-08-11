@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/learning_graph
+title: 学习图谱构建、渲染与节点编辑
+scope:
+    - agent/learning_graph.py
+    - agent/learning_graph_render.py
+    - agent/learning_mutations.py
+source_files: []
+depends_on: []
+related_to:
+    - path: skills

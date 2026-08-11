@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: docs_and_locales
+title: 文档、多语言与贡献者资料
+scope:
+    - docs/
+    - locales/
+    - website/
+    - contributors/
+source_files: []
+depends_on: []
+related_to: []

@@ -1,0 +1,18 @@
+schema_version: 1
+module_path: tools/file_code_tools
+title: 工具函数与通用能力库（diff/patch/schema/媒体解析）
+scope:
+    - tools/file_operations.py
+    - tools/file_state.py
+    - tools/file_tools.py
+    - tools/code_execution_tool.py
+    - tools/read_extract.py
+    - tools/write_approval.py
+    - tools/working_diff.py
+    - tools/binary_extensions.py
+    - tools/image_source.py
+    - tools/schema_sanitizer.py
+    - tools/patch_parser.py
+source_files: []
+depends_on: []
+related_to: []

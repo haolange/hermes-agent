@@ -1,0 +1,8 @@
+schema_version: 1
+module_path: plugins/standalone_plugins
+title: 推理提供商配置与插件注册中心
+scope:
+    - providers/
+source_files: []
+depends_on: []
+related_to: []

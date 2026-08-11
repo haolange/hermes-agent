@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: tools/mcp_tools
+title: MCP 客户端与 OAuth 认证集成
+scope:
+    - tools/mcp_tool.py
+    - tools/mcp_oauth.py
+    - tools/mcp_oauth_manager.py
+    - tools/mcp_dashboard_oauth.py
+    - tools/mcp_schema_cache.py
+    - tools/mcp_stdio_watchdog.py
+source_files: []
+depends_on: []
+related_to:
+    - path: tui_gateway

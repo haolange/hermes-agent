@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: agent_runtime/session_turn_lifecycle
+title: 会话轮次生命周期（Turn 启动/上下文/收尾）
+scope:
+    - agent/session_activity.py
+    - agent/turn_context.py
+    - agent/turn_finalizer.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/context_and_compression
+    - path: agent_runtime/prompt_and_reasoning

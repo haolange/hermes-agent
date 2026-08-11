@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: tools/media_generation_tools
+title: 媒体生成工具集（图像/视频/FAL/xAI）
+scope:
+    - tools/image_generation_tool.py
+    - tools/video_generation_tool.py
+    - tools/flux3_video_tool.py
+    - tools/xai_video_tools.py
+source_files: []
+depends_on: []
+related_to:
+    - path: tools/web_search_tools

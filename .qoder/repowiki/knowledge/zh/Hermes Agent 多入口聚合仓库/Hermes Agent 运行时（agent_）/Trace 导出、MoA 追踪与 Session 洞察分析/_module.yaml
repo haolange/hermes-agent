@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/trace_upload
+title: Trace 导出、MoA 追踪与 Session 洞察分析
+scope:
+    - agent/trace_upload.py
+    - agent/moa_trace.py
+    - agent/insights.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/core_runtime_loop

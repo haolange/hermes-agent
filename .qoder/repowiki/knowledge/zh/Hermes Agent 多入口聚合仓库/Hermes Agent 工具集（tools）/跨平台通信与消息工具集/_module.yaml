@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: tools/communication_tools
+title: 跨平台通信与消息工具集
+scope:
+    - tools/send_message_tool.py
+    - tools/react_to_message_tool.py
+    - tools/discord_tool.py
+    - tools/feishu_doc_tool.py
+    - tools/feishu_drive_tool.py
+    - tools/homeassistant_tool.py
+    - tools/yuanbao_tools.py
+source_files: []
+depends_on: []
+related_to: []

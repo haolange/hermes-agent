@@ -1,9 +1,0 @@
-schema_version: 1
-module_path: github_ci
-title: CI/CD 流水线与自动化工作流
-scope:
-    - .github/
-source_files: []
-depends_on: []
-related_to:
-    - path: docker_support

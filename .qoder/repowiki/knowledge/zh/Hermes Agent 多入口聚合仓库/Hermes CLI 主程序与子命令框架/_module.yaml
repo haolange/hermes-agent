@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: hermes_cli
+title: Hermes CLI 主程序与子命令框架
+scope:
+    - hermes_cli/
+source_files: []
+depends_on: []
+related_to:
+    - path: gateway_server
+    - path: tests
+    - path: tui_gateway

@@ -1,8 +1,0 @@
-schema_version: 1
-module_path: hermes_cli/core
-title: Hermes CLI 核心运行时与网关服务
-scope:
-    - hermes_cli/
-source_files: []
-depends_on: []
-related_to: []

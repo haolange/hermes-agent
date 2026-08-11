@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: tools/web_search_tools
+title: 外部服务工具与客户端库（xAI、OpenRouter、FAL.ai、Microsoft Graph）
+scope:
+    - tools/x_search_tool.py
+    - tools/openrouter_client.py
+    - tools/xai_http.py
+    - tools/fal_common.py
+    - tools/microsoft_graph_auth.py
+    - tools/microsoft_graph_client.py
+source_files: []
+depends_on: []
+related_to:
+    - path: tools/media_generation_tools

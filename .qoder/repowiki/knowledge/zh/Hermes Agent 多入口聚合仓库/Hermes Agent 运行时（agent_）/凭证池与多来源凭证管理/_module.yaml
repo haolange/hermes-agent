@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/credential_management
+title: 凭证池与多来源凭证管理
+scope:
+    - agent/credential_persistence.py
+    - agent/credential_pool.py
+    - agent/credential_sources.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/model_adapters

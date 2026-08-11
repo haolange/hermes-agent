@@ -1,0 +1,12 @@
+schema_version: 1
+module_path: tools/cron_and_voice
+title: 定时任务、语音交互与澄清问答工具集
+scope:
+    - tools/cronjob_tools.py
+    - tools/voice_mode.py
+    - tools/clarify_tool.py
+    - tools/clarify_gateway.py
+source_files: []
+depends_on: []
+related_to:
+    - path: cron_service

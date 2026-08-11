@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/error_retry_rate_limit
+title: 错误类型、重试退避与速率限制跟踪
+scope:
+    - agent/errors.py
+    - agent/retry_utils.py
+    - agent/rate_limit_tracker.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/model_adapters

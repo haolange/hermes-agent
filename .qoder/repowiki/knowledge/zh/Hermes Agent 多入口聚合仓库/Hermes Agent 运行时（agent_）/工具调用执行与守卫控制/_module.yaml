@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/tool_execution
+title: 工具调用执行与守卫控制
+scope:
+    - agent/tool_executor.py
+    - agent/tool_dispatch_helpers.py
+    - agent/tool_guardrails.py
+source_files: []
+depends_on: []
+related_to:
+    - path: tools/tooling_infrastructure

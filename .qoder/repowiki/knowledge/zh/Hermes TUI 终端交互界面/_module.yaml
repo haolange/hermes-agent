@@ -1,9 +1,0 @@
-schema_version: 1
-module_path: ui_tui
-title: Hermes TUI 终端交互界面
-scope:
-    - ui-tui/
-source_files: []
-depends_on: []
-related_to:
-    - path: tui_gateway

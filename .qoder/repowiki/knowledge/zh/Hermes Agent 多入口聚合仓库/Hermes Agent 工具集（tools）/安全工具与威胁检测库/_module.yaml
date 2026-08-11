@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: tools/security_tools
+title: 安全工具与威胁检测库
+scope:
+    - tools/path_security.py
+    - tools/self_repo_guard.py
+    - tools/tirith_security.py
+    - tools/threat_patterns.py
+    - tools/url_safety.py
+    - tools/website_policy.py
+    - tools/osv_check.py
+source_files: []
+depends_on: []
+related_to: []

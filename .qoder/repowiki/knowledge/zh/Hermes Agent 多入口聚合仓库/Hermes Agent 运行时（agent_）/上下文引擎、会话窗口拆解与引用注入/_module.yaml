@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: agent_runtime/context_and_compression
+title: 上下文引擎、会话窗口拆解与引用注入
+scope:
+    - agent/context_engine.py
+    - agent/context_breakdown.py
+    - agent/context_references.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/session_turn_lifecycle

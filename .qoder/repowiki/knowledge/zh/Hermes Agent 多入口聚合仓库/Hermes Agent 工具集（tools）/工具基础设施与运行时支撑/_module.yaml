@@ -1,0 +1,28 @@
+schema_version: 1
+module_path: tools/tooling_infrastructure
+title: 工具基础设施与运行时支撑
+scope:
+    - tools/registry.py
+    - tools/blueprints.py
+    - tools/approval.py
+    - tools/slash_confirm.py
+    - tools/interrupt.py
+    - tools/thread_context.py
+    - tools/process_registry.py
+    - tools/checkpoint_manager.py
+    - tools/hook_output_spill.py
+    - tools/tool_result_storage.py
+    - tools/tool_output_limits.py
+    - tools/debug_helpers.py
+    - tools/env_passthrough.py
+    - tools/env_probe.py
+    - tools/lazy_deps.py
+    - tools/fuzzy_match.py
+    - tools/budget_config.py
+    - tools/ansi_strip.py
+    - tools/credential_files.py
+    - tools/daemon_pool.py
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/tool_execution

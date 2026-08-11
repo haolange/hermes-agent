@@ -1,0 +1,14 @@
+schema_version: 1
+module_path: tools/delegation_tools
+title: 子代理委派与托管工具网关
+scope:
+    - tools/delegate_tool.py
+    - tools/async_delegation.py
+    - tools/delegation_live_log.py
+    - tools/delegation_output_schema.py
+    - tools/managed_tool_gateway.py
+    - tools/tool_backend_helpers.py
+source_files: []
+depends_on: []
+related_to:
+    - path: tui_gateway

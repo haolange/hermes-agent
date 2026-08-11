@@ -1,0 +1,11 @@
+schema_version: 1
+module_path: skills
+title: Hermes Agent 技能集（Skills）
+scope:
+    - skills/
+    - optional-skills/
+source_files: []
+depends_on: []
+related_to:
+    - path: agent_runtime/learning_graph
+    - path: tools/skills_hub

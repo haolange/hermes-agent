@@ -1,9 +1,0 @@
-schema_version: 1
-module_path: agent_runtime
-title: LSP 服务编排与诊断管理
-scope:
-    - agent/
-source_files: []
-depends_on: []
-related_to:
-    - path: acp_adapter

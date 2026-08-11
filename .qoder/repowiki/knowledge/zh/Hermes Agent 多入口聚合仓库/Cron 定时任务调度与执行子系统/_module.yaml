@@ -1,0 +1,9 @@
+schema_version: 1
+module_path: cron_service
+title: Cron 定时任务调度与执行子系统
+scope:
+    - cron/
+source_files: []
+depends_on: []
+related_to:
+    - path: tools/cron_and_voice
